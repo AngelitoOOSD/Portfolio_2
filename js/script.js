@@ -31,8 +31,3 @@ hiddenElements5.forEach((el) => observer.observe(el));
 const hiddenElements6 = document.querySelectorAll(".contact-me");
 hiddenElements6.forEach((el) => observer.observe(el));
 
-
-// Start the server
-// app.listen(3000, () => {
-//   console.log('Server is running on port 3000');
-// });
