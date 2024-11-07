@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    background-color: #cecfd6;
+    font-family: 'Space Mono', monospace;
+    padding: 0;
+    margin: 0;
+    
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+}
+
+a{
+  text-decoration: none;
+  transition: .3s;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto; /* Two equal columns */
+    gap: 5%;
+    place-items: center;
+    /* animation */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+.box {
+    padding: 20px;
+    padding-top: 90px;
+  }
+
+.resume-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    width: 100vw;
+    /* animation */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about-content, #resume-titles{
+    text-align: center;
+    transition: .3s;
+}
+
+  .box2 {
+    padding: 10px;
+    padding-top: 10px;
+    
+  }
+
+  .btn-container {
+    display: grid;
+    justify-content: center;
+  }
+  .btn {
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    font-size: 26px;
+    font-family: 'Space Mono', monospace;
+    color: #ccc;
+    background-color: black;
+    transition: 0.4s;
+  }
+  .btn:hover{
+    background-color: rgb(186, 196, 182);
+    font-size: 28px;
+    color: black;
+  }
+
+  .links{
+    font-family: 'Space Mono', monospace;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+  }
+  .links:hover{
+    font-size: 28px;
+    background-color: rgb(245, 245, 245);
+  }
+  .links2{
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    padding: 10px;
+  }
+  .links2:hover{
+  font-size: 22px;
+}
+
+  .resume-header{
+    justify-items: center;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    /* animations */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+ }
+
+ .resume {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+ }
+ 
+ .resume-content{
+    border: 1px solid #ccc;
+ }
+
+ .skills, .more-about{
+    /* animations */
+    transform: translateX(-100%);
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+ }
+
+h5{
+    text-indent: 50px;
+ }
+ .contact-me{
+  font-family: 'Space-Mono', monospace;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px;
+  margin: 40px;
+  /* animations */
+  transform: translateX(-100%);
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+ }
+ /* HOVER */
+ .contact-mail:hover{
+  font-size: 30px;
+  font-weight: bold;
+ }
+ .contact-mail{
+  padding: 5px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: black;
+  transition: .4s;
+ }
+
+ /* animations */
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
