@@ -1,173 +1,478 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
-body{
-    background-color: #cecfd6;
-    font-family: 'Space Mono', monospace;
+body {
+  background-color: #01020a;
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+.header {
+  font-size: 3em;
+}
+
+/******************* CONTAINER *************************************************/
+
+/* PROFILE *****************************************************/
+.profile {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+}
+
+/* PROFILE PIC ****************/
+.profile-pic {
+  display: grid;
+  padding: 2%;
+  padding-left: 10%;
+}
+
+.img-container {
+  display: grid;
+  place-items: center;
+  padding-top: 10%;
+}
+
+.img1 {
+  height: 500px;
+  width: auto;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: .5px;
+  border-color: white;
+}
+
+.name-title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.name-title h3 {
+  font-size: 30px;
+}
+
+.name-title h4 {
+  font-size: 25px;
+}
+
+/* ABOUT ME *******************/
+.about-me {
+  margin: 2em;
+  display: grid;
+  padding-right: 10%;
+}
+
+.about-me h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.about-me p {
+  background-color: rgb(223, 228, 231);
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 22px;
+  color: black;
+}
+
+.contact-me {
+  margin: 2em;
+  display: grid;
+  place-items: center;
+}
+
+.email,
+.link {
+  font-size: 2em;
+  color: #01020a;
+  background-color: rgb(223, 228, 231);
+  text-align: center;
+  text-decoration: none;
+  margin-top: .2em;
+  width: 50%;
+  transition: .5s;
+}
+
+.link {
+  font-size: 1.5em;
+}
+
+.email:hover {
+  background-color: rgb(121, 125, 128);
+  font-size: 2.2em;
+  width: 60%;
+}
+
+.link:hover {
+  background-color: rgb(121, 125, 128);
+  font-size: 1.7em;
+  width: 60%;
+}
+
+
+
+/* SKILLS *****************************************************/
+.skills {
+  display: grid;
+  background-color: rgb(223, 228, 231);
+  color: black;
+  margin-top: 10%;
+  place-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.skills .header {
+  text-decoration: underline;
+  width: 15%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.skills div {
+  text-align: center;
+}
+
+.skills h4 {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.list-header {
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.skills div div {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* RESUME *****************************************************/
+.resume-area {
+  display: grid;
+  place-items: center;
+}
+
+.resume-area .header {
+  text-align: center;
+  text-decoration: underline;
+  width: 15%;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.education,
+.certificates,
+.employment {
+  background-color: rgb(223, 228, 231);
+  color: #01020a;
+  border-radius: 25px;
+  padding: 1em;
+  margin-bottom: 1em;
+  margin: 1em;
+  transition: 1s;
+}
+
+.resume .edu-cert {
+  margin-left: 10%;
+}
+
+.resume .employment {
+  margin-right: 10%;
+}
+
+.education .resume-title,
+.certificates .resume-title,
+.employment .resume-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-indent: 0;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.education .resume-sub,
+.certificates p,
+.employment .resume-sub {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-indent: 0;
+}
+
+.education p,
+.employment p {
+  font-size: 1.2em;
+  text-indent: 1.5em;
+}
+
+.education:hover {
+  background-color: rgb(191, 197, 199);
+  transform: translateY(-2%);
+  transition: 1s;
+}
+
+.certificates:hover {
+  background-color: rgb(191, 197, 199);
+  transform: translateY(-2%);
+  transition: 1s;
+}
+
+.employment:hover {
+  background-color: rgb(191, 197, 199);
+  transform: translateY(-2%);
+  transition: 1s;
+}
+
+/* PROJECTS *****************************************************/
+.projects {
+  display: grid;
+  place-items: center;
+  background-color: rgb(223, 228, 231);
+  color: black;
+  margin-top: 10%;
+}
+
+.projects .header {
+  text-align: center;
+  text-decoration: underline;
+  width: 20%;
+  margin-bottom: 2em;
+  padding-top: 1em;
+}
+
+.project-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10%;
+}
+
+.img-div {
+  margin-left: 10%;
+  display: grid;
+  place-items: center;
+}
+
+.description {
+  margin-right: 10%;
+  background-color: rgb(160, 164, 167);
+  padding: 2em;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+.description:hover {
+  transform: scale(1.05);
+  transition: .5s;
+}
+
+.project-img {
+  height: auto;
+  width: 40vw;
+  border-radius: 25px;
+  transition: .5s;
+}
+
+.project-img:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+.description h3 {
+  font-size: 2em;
+}
+
+.description h4,
+h5 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.description h6 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.project-links {
+  display: grid;
+  place-items: center;
+}
+
+.link2 {
+  background-color: #01020a;
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50%;
+  margin-top: 1em;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.link2:hover {
+  background-color: aliceblue;
+  color: #01020a;
+  transition: .5s;
+  font-size: 1.6em;
+  width: 60%;
+}
+
+.project-links:hover {
+  color: red;
+}
+
+/* MORE ABOUT ME *****************************************************/
+.more-about-me {
+  display: grid;
+  place-items: center;
+  background-color: #01020a;
+  color: aliceblue;
+  padding-bottom: 5em;
+}
+
+.more-about-container {
+  margin-top: 4em;
+  display: grid;
+  place-items: center;
+  background-color: aliceblue;
+  border-radius: 25px;
+  padding: 2em;
+  color: #01020a;
+  transition: .5s;
+}
+
+.more-about-container:hover {
+  transform: scale(1.08);
+}
+
+.more-about-me .header {
+  text-align: center;
+  text-decoration: underline;
+  width: 80%;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.more-about-me h2 {
+  font-size: 2em;
+  margin-bottom: 0em;
+}
+
+.more-about-me h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* ABOUT THIS WEBSITE *****************************************************/
+.about-this-site {
+  display: grid;
+  place-items: center;
+  background-color: aliceblue;
+  color: #01020a;
+  padding-top: 4em;
+  padding-bottom: 8em;
+}
+
+.about-this-site .header {
+  text-decoration: underline;
+
+}
+
+.about-this-site h4 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.contact {
+  margin-top: 4em;
+  background-color: #01020a;
+  color: aliceblue;
+  font-size: 2em;
+  font-weight: 400;
+  padding: .5em;
+  transition: .5s;
+}
+
+.contact:hover {
+  background-color: rgb(161, 164, 167);
+  color: #01020a;
+  font-weight: 600;
+  transform: scale(1.08);
+  transition: .5s;
+}
+
+/*************************** scale to phones ****************************/
+@media(max-width: 768px) {
+  
+  .header {
+    font-size: 2em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile, .resume, .skills, .resume-area, .projects, .project-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img1 {
+    height: 300px;
+    width: auto;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: .5px;
+    border-color: white;
+  }
+  .about-me, .resume-area, .resume, .projects{
+    width: 100%;
     padding: 0;
     margin: 0;
-    
-}
-h1, h2 {
-    text-align: center;
-}
-h1 {
-    font-size: 30px;
-}
-
-a{
-  text-decoration: none;
-  transition: .3s;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: auto auto; /* Two equal columns */
-    gap: 5%;
-    place-items: center;
-    /* animation */
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all 1s;
+  }
+  .skills .header,.resume-area .header, .projects .header
+  {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .skills h4{
+    font-size: 1em;
+  }
+  .resume-sub{
+    font-size: 1.2em;
+  }
+  .resume-title{
+    font-size: 1em;
+  }
+  .project-img{
+    height: 200px;
+    width: auto;
+  }
+  .link2{
+    font-size: 1em;
   }
   
-.box {
-    padding: 20px;
-    padding-top: 90px;
+  .description h3, .more-about-container .header {
+    font-size: 1.5em;
   }
-
-.resume-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 10px;
-    width: 100vw;
-    /* animation */
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all 1s;
+  .more-about-container h2{
+    font-size: 1.3em;
+  }
+  .description h5, .more-about-container h3 {
+    font-size: 1em;
+  }
 }
-
-#about-content, #resume-titles{
-    text-align: center;
-    transition: .3s;
-}
-
-  .box2 {
-    padding: 10px;
-    padding-top: 10px;
-    
-  }
-
-  .btn-container {
-    display: grid;
-    justify-content: center;
-  }
-  .btn {
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-    font-size: 26px;
-    font-family: 'Space Mono', monospace;
-    color: #ccc;
-    background-color: black;
-    transition: 0.4s;
-  }
-  .btn:hover{
-    background-color: rgb(186, 196, 182);
-    font-size: 28px;
-    color: black;
-  }
-
-  .links{
-    font-family: 'Space Mono', monospace;
-    font-size: 26px;
-    text-decoration: none;
-    color: black;
-    transition: 0.4s;
-  }
-  .links:hover{
-    font-size: 28px;
-    background-color: rgb(245, 245, 245);
-  }
-  .links2{
-    font-family: 'Space Mono', monospace;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: rgb(245, 245, 245);
-    color: black;
-    padding: 10px;
-  }
-  .links2:hover{
-  font-size: 22px;
-}
-
-  .resume-header{
-    justify-items: center;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    text-decoration: underline;
-    /* animations */
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all 1s;
- }
-
- .resume {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
- }
- 
- .resume-content{
-    border: 1px solid #ccc;
- }
-
- .skills, .more-about{
-    /* animations */
-    transform: translateX(-100%);
-    text-align: center;
-    opacity: 0;
-    transition: all 1s;
- }
-
-h5{
-    text-indent: 50px;
- }
- .contact-me{
-  font-family: 'Space-Mono', monospace;
-  text-align: center;
-  text-decoration: none;
-  padding: 40px;
-  margin: 40px;
-  /* animations */
-  transform: translateX(-100%);
-  text-align: center;
-  opacity: 0;
-  transition: all 1s;
- }
- /* HOVER */
- .contact-mail:hover{
-  font-size: 30px;
-  font-weight: bold;
- }
- .contact-mail{
-  padding: 5px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-size: 20px;
-  color: black;
-  transition: .4s;
- }
-
- /* animations */
-.show{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
